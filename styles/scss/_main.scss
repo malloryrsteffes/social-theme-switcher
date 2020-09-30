@@ -2,17 +2,36 @@ body {
   overflow-x: hidden;
   font-size: 20px;
 }
+h2 {
+  font-size: 1.8rem;
+}
+#header {
+  line-height: 1;
+  margin: 2rem 0;
+  h1 {
+    font-size: 1.8rem;
+  }
+  small {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .theme-switcher {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+}
+
+#main {
+}
 .card {
   margin: 1rem 0;
   text-align: center;
   .card-title {
-    color: $desaturated-blue;
     font-size: 0.8rem;
     font-weight: bold;
   }
   .card-text {
     font-weight: lighter;
-    color: $desaturated-blue;
     letter-spacing: 4px;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -20,12 +39,10 @@ body {
       font-weight: bold;
       font-size: 2.8rem;
       display: block;
-      color: $white;
       margin-bottom: 0;
     }
   }
   .card-bottom {
-    color: $lime-green;
     font-size: 0.7rem;
     margin-top: 1.8rem;
     font-weight: bold;
@@ -35,9 +52,29 @@ body {
 body.dark {
   background: $very-dark-blue;
   color: $white;
-
+  #header {
+    small {
+      color: $desaturated-blue;
+    }
+    .theme-switcher {
+      color: $desaturated-blue;
+    }
+  }
   .card {
     background: $card-bg;
+
+    .card-title {
+      color: $desaturated-blue;
+    }
+    .card-text {
+      color: $desaturated-blue;
+      .followers {
+        color: $white;
+      }
+    }
+    .card-bottom {
+      color: $lime-green;
+    }
   }
 }
 

@@ -1,0 +1,47 @@
+body {
+  overflow-x: hidden;
+  font-size: 20px;
+}
+.card {
+  margin: 1rem 0;
+  text-align: center;
+  .card-title {
+    color: $desaturated-blue;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .card-text {
+    font-weight: lighter;
+    color: $desaturated-blue;
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    .followers {
+      font-weight: bold;
+      font-size: 2.8rem;
+      display: block;
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+  .card-bottom {
+    color: $lime-green;
+    font-size: 0.7rem;
+    margin-top: 1.8rem;
+    font-weight: bold;
+  }
+}
+
+body.dark {
+  background: $very-dark-blue;
+  color: $white;
+
+  .card {
+    background: $card-bg;
+  }
+}
+
+body.light {
+  background: $white;
+  color: $very-dark-blue;
+}

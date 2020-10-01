@@ -12,6 +12,12 @@
       href="./images/favicon-32x32.png"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -19,6 +25,8 @@
     <title>Theme Switch</title>
   </head>
   <body class="dark">
+    <section id="header-background"></section>
+
     <section id="header">
       <div class="container">
         <div class="row">
@@ -38,22 +46,30 @@
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
-                <div class="card-title">@nathanf</div>
+                <div class="card-title">
+                  <i class="fab fa-facebook-square fa-2x"></i> @nathanf
+                </div>
                 <div class="card-text">
                   <span class="followers">1987</span> Followers
                 </div>
-                <div class="card-bottom">12 Today</div>
+                <div class="card-bottom">
+                  <i class="fas fa-caret-up"></i> 12 Today
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
-                <div class="card-title">@nathanf</div>
+                <div class="card-title">
+                  <i class="fab fa-twitter fa-2x"></i> @nathanf
+                </div>
                 <div class="card-text">
                   <span class="followers">1044</span> Followers
                 </div>
-                <div class="card-bottom">99 Today</div>
+                <div class="card-bottom">
+                  <i class="fas fa-caret-up"></i> 99 Today
+                </div>
               </div>
             </div>
           </div>
@@ -64,7 +80,9 @@
                 <div class="card-text">
                   <span class="followers">11k</span> Followers
                 </div>
-                <div class="card-bottom">1099 Today</div>
+                <div class="card-bottom">
+                  <i class="fas fa-caret-up"></i> 1099 Today
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +93,11 @@
                 <div class="card-text">
                   <span class="followers">8239</span> Subscribers
                 </div>
-                <div class="card-bottom">144 Today</div>
+                <div class="card-bottom">
+                  <span class="negative"
+                    ><i class="fas fa-caret-down"></i> 144 Today</span
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -87,57 +109,97 @@
           <div class="col-lg-3 overview">
             <div class="card">
               <div class="card-body">
-                <div class="card-title">Page Views</div>
+                <span class="title">Page Views</span>
+                <i class="fab fa-facebook fa-1x"></i>
+                <div class="count">87</div>
+                <div class="percentage positive">
+                  <i class="fas fa-caret-up"></i> 3%
+                </div>
               </div>
-              <div class="card-text">87 3%</div>
-            </div>
-          </div>
-          <div class="col-lg-3 overview">
-            <div class="card">
-              <div class="card-body"><div class="card-title">Likes</div></div>
-              <div class="card-text">52 2%</div>
-            </div>
-          </div>
-          <div class="col-lg-3 overview">
-            <div class="card">
-              <div class="card-body"><div class="card-title">Likes</div></div>
-              <div class="card-text">5462 2257%</div>
             </div>
           </div>
           <div class="col-lg-3 overview">
             <div class="card">
               <div class="card-body">
-                <div class="card-title">Profile Views</div>
+                <span class="title">Likes</span>
+                <i class="fab fa-facebook fa-1x"></i>
+                <div class="count">52</div>
+                <div class="percentage negative">
+                  <i class="fas fa-caret-down"></i> 2%
+                </div>
               </div>
-              <div class="card-text">52k 1375%</div>
             </div>
           </div>
           <div class="col-lg-3 overview">
             <div class="card">
               <div class="card-body">
-                <div class="card-title">Retweets</div>
+                <span class="title">Likes</span>
+                <i class="fab fa-instagram fa-1x"></i>
+                <div class="count">5462</div>
+                <div class="percentage positive">
+                  <i class="fas fa-caret-up"></i> 2257%
+                </div>
               </div>
-              <div class="card-text">117 303%</div>
-            </div>
-          </div>
-          <div class="col-lg-3 overview">
-            <div class="card">
-              <div class="card-body"><div class="card-title">Likes</div></div>
-              <div class="card-text">507 553%</div>
-            </div>
-          </div>
-          <div class="col-lg-3 overview">
-            <div class="card">
-              <div class="card-body"><div class="card-title">Likes</div></div>
-              <div class="card-text">107 19%</div>
             </div>
           </div>
           <div class="col-lg-3 overview">
             <div class="card">
               <div class="card-body">
-                <div class="card-title">Total Views</div>
+                <span class="title">Profile Views</span>
+                <i class="fab fa-instagram fa-1x"></i>
+                <div class="count">52k</div>
+                <div class="percentage positive">
+                  <i class="fas fa-caret-up"></i> 1375%
+                </div>
               </div>
-              <div class="card-text">1407 12%</div>
+            </div>
+          </div>
+          <div class="col-lg-3 overview">
+            <div class="card">
+              <div class="card-body">
+                <span class="title">Retweets</span>
+                <i class="fab fa-twitter fa-1x"></i>
+                <div class="count">117</div>
+                <div class="percentage positive">
+                  <i class="fas fa-caret-up"></i>303%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 overview">
+            <div class="card">
+              <div class="card-body">
+                <span class="title">Likes</span>
+                <i class="fab fa-twitter fa-1x"></i>
+                <div class="count">507</div>
+                <div class="percentage positive">
+                  <i class="fas fa-caret-up"></i>553%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 overview">
+            <div class="card">
+              <div class="card-body">
+                <span class="title">Likes</span>
+                <i class="fab fa-youtube fa-1x"></i>
+                <div class="count">107</div>
+                <div class="percentage negative">
+                  <i class="fas fa-caret-down"></i> 19%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 overview">
+            <div class="card">
+              <div class="card-body">
+                <span class="title">Total Views</span>
+                <i class="fab fa-youtube fa-1x"></i>
+                <div class="count">1407</div>
+                <div class="percentage negative">
+                  <i class="fas fa-caret-down"></i> 12%
+                </div>
+              </div>
             </div>
           </div>
         </div>

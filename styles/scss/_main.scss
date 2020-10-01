@@ -2,12 +2,24 @@ body {
   overflow-x: hidden;
   font-size: 20px;
 }
+#header-background {
+  height: 250px;
+  position: absolute;
+  width: 100%;
+}
 h2 {
   font-size: 1.8rem;
 }
+
+.negative {
+  color: $bright-red;
+}
+.positive {
+  color: $lime-green;
+}
 #header {
   line-height: 1;
-  margin: 2rem 0;
+  padding: 2rem 0;
   h1 {
     font-size: 1.8rem;
   }
@@ -22,6 +34,57 @@ h2 {
 }
 
 #main {
+  .overview-row {
+    .overview .card {
+      padding: 1rem;
+      .card-body {
+        position: relative;
+        min-height: 125px;
+        height: fit-content;
+
+        .title,
+        .count,
+        .fab,
+        .percentage {
+          position: absolute;
+          font-weight: bold;
+        }
+        .title {
+          top: 0;
+          left: 0;
+          font-size: 0.95rem;
+          padding-top: 15px;
+        }
+        .count {
+          bottom: 0;
+          left: 0;
+          font-size: 2rem;
+          padding-bottom: 15px;
+        }
+        .fab {
+          top: 0;
+          right: 0;
+          padding-top: 15px;
+        }
+        .fa-facebook {
+          color: $facebook;
+        }
+        .fa-twitter {
+          color: $twitter;
+        }
+        .fa-youtube {
+          color: $youtube;
+        }
+
+        .percentage {
+          bottom: 0;
+          right: 0;
+          font-size: 0.8rem;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
 }
 .card {
   margin: 1rem 0;
@@ -52,6 +115,9 @@ h2 {
 body.dark {
   background: $very-dark-blue;
   color: $white;
+  #header-background {
+    background: $very-dark-blue-top;
+  }
   #header {
     small {
       color: $desaturated-blue;
@@ -74,6 +140,9 @@ body.dark {
     }
     .card-bottom {
       color: $lime-green;
+    }
+    .title {
+      color: $desaturated-blue;
     }
   }
 }

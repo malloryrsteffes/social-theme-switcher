@@ -6494,12 +6494,23 @@ body {
   overflow-x: hidden;
   font-size: 20px; }
 
+#header-background {
+  height: 250px;
+  position: absolute;
+  width: 100%; }
+
 h2 {
   font-size: 1.8rem; }
 
+.negative {
+  color: #dc414c; }
+
+.positive {
+  color: #1db489; }
+
 #header {
   line-height: 1;
-  margin: 2rem 0; }
+  padding: 2rem 0; }
   #header h1 {
     font-size: 1.8rem; }
   #header small {
@@ -6508,6 +6519,44 @@ h2 {
   #header .theme-switcher {
     font-weight: bold;
     font-size: 0.9rem; }
+
+#main .overview-row .overview .card {
+  padding: 1rem; }
+  #main .overview-row .overview .card .card-body {
+    position: relative;
+    min-height: 125px;
+    height: fit-content; }
+    #main .overview-row .overview .card .card-body .title,
+    #main .overview-row .overview .card .card-body .count,
+    #main .overview-row .overview .card .card-body .fab,
+    #main .overview-row .overview .card .card-body .percentage {
+      position: absolute;
+      font-weight: bold; }
+    #main .overview-row .overview .card .card-body .title {
+      top: 0;
+      left: 0;
+      font-size: 0.95rem;
+      padding-top: 15px; }
+    #main .overview-row .overview .card .card-body .count {
+      bottom: 0;
+      left: 0;
+      font-size: 2rem;
+      padding-bottom: 15px; }
+    #main .overview-row .overview .card .card-body .fab {
+      top: 0;
+      right: 0;
+      padding-top: 15px; }
+    #main .overview-row .overview .card .card-body .fa-facebook {
+      color: #198ff5; }
+    #main .overview-row .overview .card .card-body .fa-twitter {
+      color: #1ca0f2; }
+    #main .overview-row .overview .card .card-body .fa-youtube {
+      color: #c4032a; }
+    #main .overview-row .overview .card .card-body .percentage {
+      bottom: 0;
+      right: 0;
+      font-size: 0.8rem;
+      padding-bottom: 15px; }
 
 .card {
   margin: 1rem 0;
@@ -6533,6 +6582,8 @@ h2 {
 body.dark {
   background: #1e202a;
   color: white; }
+  body.dark #header-background {
+    background: #1f212e; }
   body.dark #header small {
     color: #8b97c6; }
   body.dark #header .theme-switcher {
@@ -6547,6 +6598,8 @@ body.dark {
         color: white; }
     body.dark .card .card-bottom {
       color: #1db489; }
+    body.dark .card .title {
+      color: #8b97c6; }
 
 body.light {
   background: white;

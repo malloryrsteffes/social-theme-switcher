@@ -113,7 +113,7 @@ $bright-red: hsl(356, 69%, 56%);
 $white: hsl(0, 0%, 100%);
 $facebook: hsl(208, 92%, 53%);
 $twitter: hsl(203, 89%, 53%);
-$instagram: linear-gradient(#fdc468,#df4996);
+$instagram: linear-gradient(#fcc368,#de4896);
 $youtube: hsl(348, 97%, 39%);
 
 // Dark Theme Styles ========================================
@@ -208,7 +208,7 @@ $grid-breakpoints: (
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints);
 
-
+$screen-sm: 576px;
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.

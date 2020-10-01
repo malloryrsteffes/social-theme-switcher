@@ -10,7 +10,30 @@ body {
 h2 {
   font-size: 1.8rem;
 }
-
+.facebook-card {
+  border-top: 5px solid $facebook;
+}
+.twitter-card {
+  border-top: 5px solid $twitter;
+}
+.youtube-card {
+  border-top: 5px solid $youtube;
+}
+.instagram-card {
+  border-top: 5px solid #c13584;
+}
+.fa-facebook-square {
+  color: $facebook;
+}
+.fa-twitter {
+  color: $twitter;
+}
+.fa-instagram {
+  color: #c13584;
+}
+.fa-youtube {
+  color: $youtube;
+}
 .negative {
   color: $bright-red;
 }
@@ -30,10 +53,16 @@ h2 {
   .theme-switcher {
     font-weight: bold;
     font-size: 0.9rem;
+    @media (max-width: $screen-sm) {
+      display: block;
+      text-align: left;
+      margin-top: 2rem;
+    }
   }
 }
 
 #main {
+  padding-bottom: 2rem;
   .overview-row {
     .overview .card {
       padding: 1rem;
@@ -54,33 +83,28 @@ h2 {
           left: 0;
           font-size: 0.95rem;
           padding-top: 15px;
+          padding-left: 10px;
         }
         .count {
           bottom: 0;
           left: 0;
           font-size: 2rem;
           padding-bottom: 15px;
+          padding-left: 10px;
         }
         .fab {
           top: 0;
           right: 0;
           padding-top: 15px;
-        }
-        .fa-facebook {
-          color: $facebook;
-        }
-        .fa-twitter {
-          color: $twitter;
-        }
-        .fa-youtube {
-          color: $youtube;
+          padding-right: 10px;
         }
 
         .percentage {
           bottom: 0;
           right: 0;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           padding-bottom: 15px;
+          padding-right: 10px;
         }
       }
     }
@@ -106,7 +130,7 @@ h2 {
     }
   }
   .card-bottom {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: 1.8rem;
     font-weight: bold;
   }

@@ -139,7 +139,9 @@ $light-gray-blue: hsl(227, 47%, 96%);
 // Blue Text
 $dark-gray-blue: hsl(228, 12%, 45%);
 
-
+//toggle gradient
+$start: #378ee6;
+$end: #3eda81;
 // Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these
@@ -190,8 +192,8 @@ $link-hover-decoration:     underline !default;
 // Style p element.
 
 $paragraph-margin-bottom:   1rem !default;
-
-
+$screen-md: 768px;
+$screen-xs: 375px;
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,

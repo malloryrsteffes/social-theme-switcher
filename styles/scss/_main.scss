@@ -191,7 +191,29 @@ body.dark {
 
 body.light {
   background: $white;
-  color: $very-dark-blue;
+  color: $desaturated-blue;
+  #header h1 {
+    color: $very-dark-blue;
+  }
+  #header-background {
+    background: $very-pale-blue;
+  }
+  .card {
+    background-color: $light-gray-blue;
+    .card-bottom {
+      color: $lime-green;
+    }
+    .title {
+      color: $desaturated-blue;
+    }
+    .card-text {
+      font-weight: normal;
+    }
+    .followers,
+    .count {
+      color: $very-dark-blue;
+    }
+  }
 }
 
 /* The switch - the box around the slider */

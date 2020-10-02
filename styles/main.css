@@ -6648,7 +6648,22 @@ body.dark {
 
 body.light {
   background: white;
-  color: #1e202a; }
+  color: #8b97c6; }
+  body.light #header h1 {
+    color: #1e202a; }
+  body.light #header-background {
+    background: #f5f7ff; }
+  body.light .card {
+    background-color: #f0f2fa; }
+    body.light .card .card-bottom {
+      color: #1db489; }
+    body.light .card .title {
+      color: #8b97c6; }
+    body.light .card .card-text {
+      font-weight: normal; }
+    body.light .card .followers,
+    body.light .card .count {
+      color: #1e202a; }
 
 /* The switch - the box around the slider */
 .switch {

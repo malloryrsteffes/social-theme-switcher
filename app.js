@@ -1,4 +1,3 @@
-let toggle = document.getElementById("toggle");
 let body = document.getElementsByTagName("body");
 
 function toggleClass() {

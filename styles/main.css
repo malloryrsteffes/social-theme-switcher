@@ -6561,7 +6561,7 @@ h2 {
       @media (max-width: 576px) {
         #header .theme-switch .theme-switcher {
           right: 15%; } }
-      @media (max-width: 375px) {
+      @media (max-width: 415px) {
         #header .theme-switch .theme-switcher {
           right: 23%; } }
 
